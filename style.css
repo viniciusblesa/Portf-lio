@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header nav ul li{
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: #00ffee;
+    border-bottom: 2px solid #00ffee;
+}
+header h2, span{
+    text-shadow: 0 0 10px #00ffee;
+}
+h1, h2, h3{
+    color: #00ffee;
+
+}
+h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+p{
+    text-align: justify;
+    margin-top: 10px;
+}
+p, form{
+    color: white;
+    font-size: 20px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    margin: 0px 80px;
+    align-items: center;
+}
+.texto-home{
+    width: 50%;
+    margin-right: 200px;
+}
+.texto-home h2{
+    margin-bottom: 20px;
+}
+.texto-home p{
+    margin-top: 20px;
+}
+.home img{
+    width: 25%;
+    border-radius: 50px;
+}
+.texto-sobre{
+    width: 60%;
+}
+.texto-sobre h2{
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.texto-sobre p{
+    font-size: 25px;
+    margin-left: 80px;
+}
+.sobre img{
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px;
+}
+.servicos,
+.portfolio,
+.contato{
+    justify-content: space-around;
+    align-items: stretch;
+}
+.servicos h2,
+.portfolio h2,
+.contato h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.box1{
+    border: 2px solid #00ffee;
+    padding: 50px;
+    text-align: center;
+    flex-basis: 250px;
+    border-radius: 10px;
+}
+.box2{
+    border: 2px solid #00ffee;
+    padding: 50px;
+    text-align: center;
+    flex-basis: 250px;
+    border-radius: 10px;
+}
+.box3{
+    border: 2px solid #00ffee;
+    padding: 50px;
+    text-align: center;
+    flex-basis: 250px;
+    border-radius: 10px;
+}
+.box1:hover{
+    box-shadow: 0 0 50px orange;
+    text-shadow: 0 0 8px #00c3ff;
+}
+.box2:hover{
+    box-shadow: 0 0 50px rgba(0, 162, 255, 0.945);
+    text-shadow: 0 0 8px #00c3ff;
+}
+.box3:hover{
+    box-shadow: 0 0 50px yellow;
+    text-shadow: 0 0 8px #00c3ff;
+}
+ion-icon{
+    color: #00c3ff;
+    font-size: 80px;
+}
+.html:hover{
+    color: orange;
+}
+.css:hover{
+    color: rgba(0, 162, 255, 0.945);
+}
+.js:hover{
+    color: yellow;
+}
+.projeto{
+    flex-basis: 350px;
+    padding: 25px;
+    border: 2px solid #00c3ff;
+    border-radius: 10px;
+    position: relative;
+}
+.projeto:hover{
+    box-shadow: 0 0 50px #00ffee;
+    text-shadow: 0 0 10px #00c3ff;
+}
+.projeto p,
+.projeto a{
+    text-shadow: none;
+}
+.projeto img{
+    width: 100%;
+    margin: 20px auto;
+}
+.projeto a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+}
+.projeto a:hover{
+    color: #00ffee;
+    border-bottom: 2px solid #00ffee;
+}
+.contato{
+    align-items: center;
+}
+.foto{
+    background-image: url("img/imgem_contato.png");
+    border-radius: 50%;
+    background-size: cover;
+}
+.gradiente{
+    width: 200px;
+    width: 100%;
+    height: 400px;
+}
+.foto,
+form{
+    width: 40%;
+}
+form{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+form div{
+    margin-bottom: 15px;
+}
+input,
+label,
+textarea{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 5px;
+}
+input:focus:focus,
+textarea:focus{
+    outline: 2px solid #00c3ff;
+}
+button{
+    color: white;
+    background-color: #00ffee;
+    padding: 10px 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 25;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #00c3ff;
+}
+footer{
+    display: inline-block;
+    border-top: 3px solid white;
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+footer ul li{
+    display: inline-block;
+    margin: 20px 40px;
+}
+footer ul li a{
+    text-decoration: none;
+}
+footer ul li a ion-icon{
+    font-size: 40px;
+}
+footer ul li .logo-facebook ion-icon:hover{
+    color: blue;
+}
+footer ul li .logo-instagram ion-icon:hover{
+    color: orange;
+}
+footer ul li .logo-linkedin ion-icon:hover{
+    color: rgb(0, 225, 255);
+}
+footer ul li .logo-whatsapp ion-icon:hover{
+    color: rgb(0, 255, 0);
+}
+@media only screen and (max-width:1075px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    section{
+        padding-top: 150px;
+    }
+    .home,
+    .sobre,
+    .contato{
+        flex-direction: column;
+    }
+    .texto-home,
+    .texto-sobre,
+    .foto,
+    form{
+        width: 100%;
+    }
+    .home img{
+        margin-right: 200px;
+    }
+    .sobre img{
+        order: 1;
+        margin-top: 40px;
+    }
+    .servicos,
+    .portfolio{
+        gap: 20px;
+        row-gap: 30px;
+    }
+}
+@media only screen and (max-width:685px){
+    header{
+        position: relative;
+    }
+    header nav{
+        margin-top: 20px;
+    }
+    header nav ul li{
+        display: block;
+    }
+    section{
+        padding-top: 20px;
+        margin: 0 15px;
+    }
+    .servicos h2,
+    .portfolio h2,
+    .contato h2{
+        margin: 30px auto;
+    }
+}
